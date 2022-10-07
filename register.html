@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *. {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .wrap {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(255, 255, 189);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .title1 {
+        color: blue;
+        margin: 20px;
+        background-color: rgb(172, 233, 248);
+        height: 40px;
+    }
+
+    .title2 {
+        color: blue;
+        font-size: 25px;
+        padding-left: 13px;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php">
+        <div class="wrap" style="padding: 3px;">
+            <h1 class="title1">ĐĂNG KÝ HỌC VIÊN</h1>
+            <span class="title2">Họ và tên</span> <input style="margin-left:5px" type="text" name="name"
+                size="30"><br><br>
+            <span class="title2">Ngày sinh</span> <input type="text" name="dateofbirth" size="15"><br><br>
+            <span class="title2">Giới tính </span> <input style="margin-left: 20px;" type="radio" name="sex"
+                value="male"><span style="font-size: 20px;">Nam</span>
+            <input style="margin-left: 20px;" type="radio" name="sex" value="female"> <span
+                style="font-size: 20px;">Nữ</span> <br><br>
+            <span class="title2">Địa chỉ</span>
+            <textarea name="address" id="" cols="30" rows="5" style="margin-left: 28px;"></textarea><br><br>
+            <span class="title2">Lớp</span>
+            <select style="margin-left: 63px;" name="class" id="cl">
+                <option value="class1">Lớp 1</option>
+                <option value="class2">Lớp 2</option>
+                <option value="class3">Lớp 3</option>
+                <option value="class4">Lớp 4</option>
+            </select>
+            <br><br>
+            <span class="title2">Email</span> <input style="margin-left: 44px;" type="text" name="email"
+                size="15"><br><br>
+            <span class="title2">Điện thoại</span> <input type="text" name="phone" size="15"><br><br>
+            <input style="margin-left: 120px;" type="submit" name="submit" value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+        </div>
+    </form>
+</body>
+
+</html>
